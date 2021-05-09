@@ -15,7 +15,7 @@ int main(){
 		printf("-+-+-\n");
 		printf("%c|%c|%c\n", pos[3], pos[4], pos[5]);
 		printf("-+-+-\n");
-		printf("%c|%c|%c\n", pos[7], pos[8], pos[9]);
+		printf("%c|%c|%c\n", pos[6], pos[7], pos[8]);
 		
 		
 		if(count % 2 == 0 ){
@@ -49,7 +49,8 @@ int main(){
 			}
 		}
 		flag = 0;
-		for(i=0; k<=i+6; k += 3){
+		for(i=0; i<3; i++){
+		for(k=i; k<=i+6; k += 3){
 			if(pos[k] == sign)
 				flag++;
 		}
@@ -57,8 +58,8 @@ int main(){
 				winner = 1;
 				win(player, winner, pos);
 			}
-			flag = 0;
 		}
+			flag = 0;
 		
 		if((pos[0] == sign && pos[4] == sign && pos[8] == sign) || (pos[2] == sign && pos[4] == sign && pos[6] == sign)){
 			winner = 1;
@@ -73,7 +74,7 @@ void win(int player, int winner, int pos[]){
 		printf("-+-+-");
 		printf("%c|%c|%c", pos[3], pos[4], pos[5]);
 		printf("-+-+-");
-		printf("%c|%c|%c", pos[7], pos[8], pos[9]);
+		printf("%c|%c|%c", pos[6], pos[7], pos[8]);
 		
 		if(winner){
 			printf("Player %d is the winner\n", player);
