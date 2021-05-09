@@ -15,7 +15,7 @@ int main(){
 		printf("-+-+-\n");
 		printf("%c|%c|%c\n", pos[3], pos[4], pos[5]);
 		printf("-+-+-\n");
-		printf("%c|%c|%c\n", pos[6], pos[7], pos[8]);
+		printf("%c|%c|%c\n", pos[7], pos[8], pos[9]);
 		
 		
 		if(count % 2 == 0 ){
@@ -73,7 +73,7 @@ void win(int player, int winner, int pos[]){
 		printf("-+-+-");
 		printf("%c|%c|%c", pos[3], pos[4], pos[5]);
 		printf("-+-+-");
-		printf("%c|%c|%c", pos[6], pos[7], pos[8]);
+		printf("%c|%c|%c", pos[7], pos[8], pos[9]);
 		
 		if(winner){
 			printf("Player %d is the winner\n", player);
